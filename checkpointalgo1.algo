@@ -3,7 +3,7 @@ ALGORITHM checkpointalgo1
 VAR
 countchar,countv,countw: INTEGER:=0;
 str : STRING ;
-i : INTEGER :=1;
+i : INTEGER :=0;
 
 
 BEGIN
@@ -11,11 +11,13 @@ BEGIN
  REPEAT
         Read(str);
     UNTIL (sentence[length(str)]:=".")
+    
+    DO
+    countchar:= i;  
+    i++;  
+   WHILE (str[i]=".") ;
 
-WHILE (str[i]=".") DO
-countchar:= i;  
-i++;  
-END_WHILE
+
 
 FOR i FROM 1 TO length.str STEP i++  DO
     countchar:= length.str
