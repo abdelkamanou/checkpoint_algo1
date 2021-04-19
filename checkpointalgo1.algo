@@ -10,7 +10,7 @@ BEGIN
 
  REPEAT
         Read(str);
-    UNTIL (sentence[length(str)]:=".")
+    UNTIL (str[length(str)]:=".")
     
     DO
     countchar:= i;  
